@@ -31,9 +31,7 @@
 }
 .toggle-cb:checked + .toggle-label {
   background-color: #ca2222;
-}
-.toggle-cb:focus + .toggle-label {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 5px #2196f3;
 }
 .toggle-cb:checked + .toggle-label::before {
   transform: translateX(55px);
