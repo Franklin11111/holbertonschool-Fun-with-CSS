@@ -14,26 +14,26 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #e7e7e7;
+  background-color: #f9f9f9;
   transition: 0.4s;
-  border: 1px solid #777;
+  border: 1px solid #e6e6e6;
 }
-.toggle-label::before {
+.toggle-switch {
   position: absolute;
-  content: "";
   height: 26px;
   width: 26px;
   left: -5px;
   bottom: -4px;
   background-color: #fff;
   transition: 0.4s;
-  border: 1px solid #777;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
 }
 .toggle-cb:checked + .toggle-label {
   background-color: #ca2222;
   box-shadow: 0 0 5px #2196f3;
 }
-.toggle-cb:checked + .toggle-label::before {
+.toggle-cb:checked + .toggle-label .toggle-switch {
   transform: translateX(55px);
 }
 .toggle-inner::after {
@@ -42,9 +42,7 @@
   width: 100%;
   color: #555;
 }
-.toggle-inner,
-.toggle-switch {
-  color: #fff;
+.toggle-inner {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -53,17 +51,9 @@
   user-select: none;
 }
 .toggle-cb:checked + .toggle-label .toggle-inner::after {
-  display: block;
   content: "Yes";
-  width: 100%;
   color: #fff;
-}
-.toggle-cb:checked + .toggle-label .toggle-switch {
-  display: none;
 }
 .toggle-label {
   border-radius: 34px;
-}
-.toggle-label::before {
-  border-radius: 50%;
 }
